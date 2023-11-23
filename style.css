@@ -1,0 +1,124 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    background: url('Assets/Images/galaxy.jpg');
+    background-size: cover; 
+    
+}
+
+header{ width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    width: 100%;
+    height: 11vh;
+    background-color: rgb(103, 110, 110);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(8, 8, 8, 0.3);
+
+}
+nav .lftlogo{
+    width: 20%;
+    text-align: center;
+
+}
+nav .menu{
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav .menu a{
+ width: 25%;
+ margin: 0px 25px;
+
+ text-decoration: none;
+ font-size: 23px;
+ font-weight: bold;
+ text-transform: uppercase;
+
+}
+main{
+
+ width: 100%;
+ height: 85vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+section h2{
+ font-size: 90px;
+ text-shadow: 2px 2px  rgb(0, 152, 240);
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ text-transform: uppercase;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+ margin-bottom: 40px;
+
+}
+#eart{
+ font-size: 45px;
+ font-weight: 500;
+ background:linear-gradient(to right, rgba(255,0,0,0), rgb(0, 152, 240));
+ animation-duration: 7s;
+ animation-iteration-count: infinite;
+}
+
+section .btn1,.btn2,.btn3{
+padding: 12px 21px;
+border-radius: 4px;
+outline: none;
+border: none;
+text-transform: uppercase;
+font-size: 15px;
+font-weight: 700;
+text-decoration: none;
+letter-spacing: 1px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section .btn1{
+background: rgba(4, 151, 243, 0.883);
+color: rgb(255, 255, 255);
+cursor: pointer;
+}
+section .btn2{
+background: rgba(250, 104, 7, 0.966);
+color: white;
+cursor: pointer;
+}
+section .btn3{
+background: rgba(171, 172, 173, 0.883);
+color: white;
+cursor: pointer;
+}
+.menu a:hover{
+
+  color: rgba(5, 129, 230, 0.835);;
+
+}
+
+.btn1:hover{
+
+    background:rgba(5, 129, 230, 0.835);
+
+
+}
+.btn2:hover{
+
+    background:rgba(230, 88, 5, 0.712);
+
+
+}
+
+.btn3:hover{
+
+    background:rgba(168, 168, 167, 0.753);
+
+
+}

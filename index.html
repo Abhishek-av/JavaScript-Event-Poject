@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="lftlogo">
+                <h1 id="eart" class="animate__flash animate__infinite	infinite">EARTH</h1>
+            </div>
+            <div class="menu" id="menus">
+                <a href="#">Home</a>
+                <a href="#">Blogs</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+            </div>
+
+        </nav>
+
+        <main id="wall">
+
+            <section>
+                <h2 id="head1" class="animate__pulse animate__infinite	infinite">Welcome to <span id="earth"></span>
+                </h2>
+                <button type="button" class="btn1" onclick="earth()">Earth</button>
+                <button type="button" class="btn2" onclick="sun()">Sun</button>
+                <button type="button" class="btn3" onclick="moon()">Moon</button>
+            </section>
+        </main>
+    </header>
+
+    <script>
+        document.getElementById("earth").innerHTML = "GALAXY";
+        document.getElementById("eart").innerHTML = "GALAXY";
+        document.getElementById("earth").style.textShadow = "2px 2px rgb(0, 0, 255)";
+
+        function earth() {
+
+            document.body.style.backgroundImage = "url('Assets/Images/earthh.jpg')";
+            document.body.style.backgroundSize = "120% 120%";
+            document.getElementById("earth").innerHTML = "Earth";
+            document.getElementById("eart").innerHTML = "EARTH";
+            document.getElementById("eart").style.backgroundImage = "linear-gradient(to right, rgba(255,0,0,0), rgb(0, 152, 240))";
+            document.getElementById("earth").style.textShadow = " 2px 2px  rgb(0, 152, 240)";
+
+        }
+        function sun() {
+            document.body.style.backgroundImage = "url('Assets/Images/sun.jpg')";
+            document.body.style.backgroundSize = "cover";
+            document.getElementById("earth").innerHTML = " SUN";
+            document.getElementById("eart").innerHTML = "SUN";
+            document.getElementById("eart").style.backgroundImage = "linear-gradient(to right, rgba(255,165,0,0), rgba(222,61,10,1))";
+            document.getElementById("earth").style.textShadow = "2px 2px red";
+
+        }
+        function moon() {
+            document.body.style.backgroundImage = "url('Assets/Images/moon.jpg')";
+            document.body.style.backgroundSize = "100% 130%";
+            document.getElementById("earth").innerHTML = " Moon";
+            document.getElementById("eart").innerHTML = "MOON";
+            document.getElementById("eart").style.backgroundImage = "linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1))";
+            document.getElementById("earth").style.textShadow = "1px 1px white";
+        }
+    </script>
+</body>
+
+</html>
